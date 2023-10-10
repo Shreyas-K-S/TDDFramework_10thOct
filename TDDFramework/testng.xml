@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<suite name="Suite" parallel="false">
+	<test name="Test">
+	<parameter name="emulator" value="true"/>	
+	<parameter name="platformName" value="Android"/>
+	<parameter name="platformVersion" value="13.0"/>
+	<parameter name="deviceUDID" value="emulator-5554"/>
+	<parameter name="deviceName" value="Pixel_7"/>	
+		<classes>
+			<class name="com.qa.tests.LoginTests"/>
+            <methods>
+				<include name = "invalidUsername"/>
+			</methods>
+			<class name="com.qa.tests.ProductTests"/>
+			 <methods>
+		    <include name = "validateProductonProductsPage"/> 	
+				<include name = "validateProductonProductDetailsPage"/>
+			 </methods>
+			</classes>
+		</test> <!-- Test -->
+	
+	<!--test name="Test1">
+	<parameter name="platformName" value="Android"/>
+	<parameter name="platformVersion" value="10.0"/>
+	<parameter name="deviceName" value="Any device name"/>	
+		<classes>
+			<class name="com.qa.BaseTest"/>
+		</classes>
+	</test--> <!-- Test -->
+</suite> <!-- Suite -->
